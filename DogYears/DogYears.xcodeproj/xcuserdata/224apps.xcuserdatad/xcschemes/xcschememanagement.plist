@@ -4,10 +4,44 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DogYearPerformanceTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>DogYears.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+		<key>UnitTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8D1D0775224370DF00E24765</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D3C14DF11FD0B056004D35C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDED15AF1F96E484000C1150</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

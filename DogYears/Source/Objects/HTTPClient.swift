@@ -29,12 +29,11 @@
 import Foundation
 
 class HTTPClient {
-	static let shared = HTTPClient()
+	//static let shared = HTTPClient()
+     let session : URLSessionProtocol
 	
-	private let session = URLSession.shared
-	
-	private init() {
-		
+   init(session: URLSessionProtocol) {
+        self.session = session
 	}
 	
 	// MARK:- Public Methods
