@@ -15,6 +15,8 @@
 		457D5FD62576C7EF00709285 /* ReminderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D5FD02576C7EF00709285 /* ReminderRow.swift */; };
 		457D5FDA2576C9A000709285 /* Reminders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 457D5FD82576C9A000709285 /* Reminders.xcdatamodeld */; };
 		457D5FDD2576CA9800709285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D5FDC2576CA9800709285 /* AppDelegate.swift */; };
+		457D5FE22576D28900709285 /* Reminder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D5FE12576D28900709285 /* Reminder+CoreDataClass.swift */; };
+		457D5FE72576DFFD00709285 /* Reminder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D5FE62576DFFD00709285 /* Reminder+CoreDataProperties.swift */; };
 		45D216212576C6F3002C5224 /* CoreDataDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D216202576C6F3002C5224 /* CoreDataDemoApp.swift */; };
 		45D216232576C6F3002C5224 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D216222576C6F3002C5224 /* ContentView.swift */; };
 		45D216252576C6F5002C5224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D216242576C6F5002C5224 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		457D5FD02576C7EF00709285 /* ReminderRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderRow.swift; sourceTree = "<group>"; };
 		457D5FD92576C9A000709285 /* Reminders.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reminders.xcdatamodel; sourceTree = "<group>"; };
 		457D5FDC2576CA9800709285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		457D5FE12576D28900709285 /* Reminder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		457D5FE62576DFFD00709285 /* Reminder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		45D2161D2576C6F3002C5224 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D216202576C6F3002C5224 /* CoreDataDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoApp.swift; sourceTree = "<group>"; };
 		45D216222576C6F3002C5224 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +74,16 @@
 			path = Reminder;
 			sourceTree = "<group>";
 		};
+		457D5FE02576D25900709285 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				457D5FD82576C9A000709285 /* Reminders.xcdatamodeld */,
+				457D5FE12576D28900709285 /* Reminder+CoreDataClass.swift */,
+				457D5FE62576DFFD00709285 /* Reminder+CoreDataProperties.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		45D216142576C6F3002C5224 = {
 			isa = PBXGroup;
 			children = (
@@ -89,13 +103,13 @@
 		45D2161F2576C6F3002C5224 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				457D5FE02576D25900709285 /* Model */,
 				45D216202576C6F3002C5224 /* CoreDataDemoApp.swift */,
 				457D5FDC2576CA9800709285 /* AppDelegate.swift */,
 				45D216222576C6F3002C5224 /* ContentView.swift */,
 				457D5FC92576C7E600709285 /* Views */,
 				45D216242576C6F5002C5224 /* Assets.xcassets */,
 				45D216292576C6F5002C5224 /* Info.plist */,
-				457D5FD82576C9A000709285 /* Reminders.xcdatamodeld */,
 				45D216262576C6F5002C5224 /* Preview Content */,
 			);
 			path = CoreDataDemo;
@@ -184,10 +198,12 @@
 				457D5FD52576C7EF00709285 /* ReminderPrioritySelectionView.swift in Sources */,
 				45D216232576C6F3002C5224 /* ContentView.swift in Sources */,
 				457D5FD32576C7EF00709285 /* RemindersView.swift in Sources */,
+				457D5FE22576D28900709285 /* Reminder+CoreDataClass.swift in Sources */,
 				457D5FD12576C7EF00709285 /* NewReminderButtonView.swift in Sources */,
 				457D5FDA2576C9A000709285 /* Reminders.xcdatamodeld in Sources */,
 				457D5FDD2576CA9800709285 /* AppDelegate.swift in Sources */,
 				45D216212576C6F3002C5224 /* CoreDataDemoApp.swift in Sources */,
+				457D5FE72576DFFD00709285 /* Reminder+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
