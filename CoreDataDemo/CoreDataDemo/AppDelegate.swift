@@ -14,5 +14,16 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         print("Your code here")
         return true
     }
-
+    
+    //MARK : - Core Data Stack -
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "Reminders")
+        container.loadPersistentStores { (storeDesc, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        }
+        return container
+    }()
 }
