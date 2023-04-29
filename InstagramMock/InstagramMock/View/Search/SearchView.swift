@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SearchView.swift
 //  InstagramMock
 //
 //  Created by Abdoulaye Diallo on 4/29/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SearchView: View {
     var body: some View {
-        MainTabView()
+        Text("Search")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SearchView()
     }
 }

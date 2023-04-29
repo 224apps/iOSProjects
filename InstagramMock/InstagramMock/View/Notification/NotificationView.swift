@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NotificationView.swift
 //  InstagramMock
 //
 //  Created by Abdoulaye Diallo on 4/29/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NotificationView: View {
     var body: some View {
-        MainTabView()
+        Text("Notification")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct NotificationView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NotificationView()
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  UploadPostView.swift
 //  InstagramMock
 //
 //  Created by Abdoulaye Diallo on 4/29/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UploadPostView: View {
     var body: some View {
-        MainTabView()
+        Text("Upload")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct UploadPostView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UploadPostView()
     }
 }
