@@ -2,14 +2,21 @@
 //  NotificationView.swift
 //  InstagramMock
 //
-//  Created by Abdoulaye Diallo on 4/29/23.
+//  Created by Abdoulaye Diallo on 5/1/23.
 //
 
 import SwiftUI
 
 struct NotificationView: View {
     var body: some View {
-        Text("Notification")
+        ScrollView {
+            LazyVStack(spacing: 20){
+                ForEach(0..<20) { item in
+                    NotificationCell()
+                        .padding(.top)
+                }
+            }
+        }
     }
 }
 
