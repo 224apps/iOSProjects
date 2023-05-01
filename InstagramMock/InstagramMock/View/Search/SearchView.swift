@@ -11,17 +11,21 @@ struct SearchView: View {
     
     //MARK: -
     @State private var searchText = ""
-    
+    @State private var inSearchMode = false
     
     //MARK: -
     var body: some View {
         ScrollView {
-            SearchBar(text: $searchText)
+            SearchBar(text: $searchText, isEditing: $inSearchMode)
                 .padding()
             
-           // PostGridView()
-            
-            UserListView()
+            ZStack {
+                if inSearchMode {
+                    UserListView()
+                }else {
+                    PostGridView()
+                }
+            }
         }
     }
 }

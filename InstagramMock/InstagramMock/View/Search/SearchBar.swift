@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct SearchBar: View {
+    //MARK: -
     @Binding var text: String
+    @Binding var isEditing: Bool
+    
+    //MARK: -
     
     var body: some View {
         HStack {
@@ -24,12 +28,28 @@ struct SearchBar: View {
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     }
                 )
+                .onTapGesture {
+                    isEditing.toggle()
+                }
+            
+            if isEditing {
+                Button(action: {
+                    isEditing.toggle()
+                    text = ""
+                    UIApplication.shared.endEditing()
+                }) {
+                    Text("Cancel")
+                        .foregroundColor(.black)
+                }
+                .padding(.trailing, 8)
+                .transition(.move(edge: .trailing))
+            }
         }
     }
 }
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(text: .constant("Search..."))
+        SearchBar(text: .constant("Search..."), isEditing: .constant(true))
     }
 }
