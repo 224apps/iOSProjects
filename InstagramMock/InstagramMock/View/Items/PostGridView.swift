@@ -13,7 +13,7 @@ struct PostGridView: View {
     
     var body: some View {
         LazyVGrid(columns: items, spacing: 2) {
-            ForEach(0..<10){ _ in
+            ForEach(0..<3){ _ in
                 NavigationLink {
                     FeedView()
                 } label: {
