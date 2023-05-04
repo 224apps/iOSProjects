@@ -31,6 +31,7 @@
 		45505A122A040B8100EAB07F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 45505A112A040B8100EAB07F /* Kingfisher */; };
 		45505A162A04178100EAB07F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45505A152A04178100EAB07F /* AuthViewModel.swift */; };
 		45505A182A0424DC00EAB07F /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45505A172A0424DC00EAB07F /* ImageUploader.swift */; };
+		45505A1A2A045CC600EAB07F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45505A192A045CC600EAB07F /* Constants.swift */; };
 		45D556B529FD90FB007A4B75 /* InstagramMockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D556B429FD90FB007A4B75 /* InstagramMockApp.swift */; };
 		45D556B929FD90FC007A4B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D556B829FD90FC007A4B75 /* Assets.xcassets */; };
 		45D556BC29FD90FC007A4B75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D556BB29FD90FC007A4B75 /* Preview Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		45505A0E2A040B5500EAB07F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		45505A152A04178100EAB07F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		45505A172A0424DC00EAB07F /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		45505A192A045CC600EAB07F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45D556B129FD90FB007A4B75 /* InstagramMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D556B429FD90FB007A4B75 /* InstagramMockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramMockApp.swift; sourceTree = "<group>"; };
 		45D556B829FD90FC007A4B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		45D556C629FD9141007A4B75 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				45505A192A045CC600EAB07F /* Constants.swift */,
 				455059E429FEC25500EAB07F /* Extensions.swift */,
 				455059EE2A02B7B400EAB07F /* ImagePicker.swift */,
 				455059F62A03F36B00EAB07F /* CustomTextField.swift */,
@@ -399,6 +402,7 @@
 				455059E529FEC25500EAB07F /* Extensions.swift in Sources */,
 				455059F12A02D03C00EAB07F /* LoginView.swift in Sources */,
 				455059E72A001CA800EAB07F /* NotificationView.swift in Sources */,
+				45505A1A2A045CC600EAB07F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
