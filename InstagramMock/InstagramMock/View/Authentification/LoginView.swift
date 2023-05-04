@@ -13,6 +13,8 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
+    @EnvironmentObject var vm: AuthViewModel
+    
     //MARK: -
     var body: some View {
         NavigationStack {
@@ -62,7 +64,7 @@ struct LoginView: View {
                         }
                     }
                     /// sign in
-                    Button(action: {}) {
+                    Button(action: { vm.login()}) {
                         Text("Sign In")
                             .font(.headline)
                             .foregroundColor(.white)

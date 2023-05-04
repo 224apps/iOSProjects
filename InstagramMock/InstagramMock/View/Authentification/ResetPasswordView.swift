@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ResetPasswordView: View {
+    //MARK: -
+    @EnvironmentObject var vm: AuthViewModel
+    
+    //MARK: -
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
