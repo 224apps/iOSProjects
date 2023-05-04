@@ -25,7 +25,7 @@ struct LoginView: View {
                 )
                 .ignoresSafeArea()
                 
-                VStack(spacing: 20) {
+                VStack{
                     
                     Image("instagram_logo")
                         .resizable()
@@ -75,8 +75,7 @@ struct LoginView: View {
                     Spacer()
                     
                     /// Do not have an account
-                    
-                    Button(action: {}) {
+                    NavigationLink(destination: RegistrationView().navigationBarHidden(true)) {
                         HStack {
                             Text("Don't have an account?")
                                 .font(.system(size: 14))
@@ -85,10 +84,10 @@ struct LoginView: View {
                             
                         }
                         .foregroundColor(.white)
-                    }
-                    .padding(.bottom, 32)
+                    }.padding(.bottom, 16)
                     
                 }
+                .padding(.top)
             }
             
         }

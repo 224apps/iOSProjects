@@ -20,7 +20,7 @@ struct UploadPostView: View {
             
             if postImage == nil {
                 Button(action: {imagePickerPresented.toggle()}) {
-                    Image(systemName: "plus.circle")
+                    Image("plus_photo")
                         .resizable()
                         .renderingMode(.template)
                         .scaledToFill()
