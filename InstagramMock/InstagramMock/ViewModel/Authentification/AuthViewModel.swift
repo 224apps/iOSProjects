@@ -12,7 +12,9 @@ class AuthViewModel: ObservableObject {
     
     @Published var userUsession: FirebaseAuth.User?
     
-    init(){
+    static let shared = AuthViewModel()
+    
+    private init(){
         userUsession = Auth.auth().currentUser
     }
     
@@ -34,7 +36,8 @@ class AuthViewModel: ObservableObject {
     }
     
     func signout(){
-        print("Sign Out")
+        userUsession = nil
+        try? Auth.auth().signOut()
     }
     
     func fetchUser(){

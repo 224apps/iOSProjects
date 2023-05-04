@@ -34,7 +34,16 @@ struct MainTabView: View {
             }
             .accentColor(.black)
             .navigationTitle("Home")
+            .navigationBarItems(leading: logoutButton)
             .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+    
+    var logoutButton: some View {
+        Button(action: { AuthViewModel.shared.signout() }) {
+            Text("Log Out")
+                .foregroundColor(.red)
+            
         }
     }
 }
