@@ -18,17 +18,31 @@ class AuthViewModel: ObservableObject {
         userUsession = Auth.auth().currentUser
     }
     
-    func register(withEmail email: String, password: String){
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
+    func register(withEmail email: String, password: String, image: UIImage?, fullName: String, username: String){
+        
+        guard let image = image else { return }
+        
+        ImageUploader.upload(image: image) { imageUrl in
             
-            guard let user = result?.user else { return }
-            self.userUsession = user
-            print("Successfully Registered a user")
+            Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                
+                guard let user = result?.user else { return }
+                self.userUsession = user
+                print("Successfully Registered a user")
+                
+                let data = [ "email" : email, "username" : username, "fullName": fullName, "profileImageUrl": imageUrl ]
+                
+                Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
+                    print("Successfully uploaded a user data")
+                    self.userUsession = user
+                }
+            }
         }
+        
     }
     
     func login(){
