@@ -10,7 +10,7 @@ import SwiftUI
 class SearchViewModel: ObservableObject {
     
     //MARK: -
-    @Published var users: [User] = []
+    @Published var users = [User]()
     
     //MARK: -
     

@@ -16,11 +16,11 @@ struct UserListView: View {
     var body: some View {
         ScrollView {
             LazyVStack{
-                ForEach(vm.users){ _ in
+                ForEach(vm.users){ user in
                     NavigationLink {
                         ProfileView()
                     } label: {
-                        UserCell()
+                        UserCell(user: user)
                             .padding(.leading)
                     }
 
