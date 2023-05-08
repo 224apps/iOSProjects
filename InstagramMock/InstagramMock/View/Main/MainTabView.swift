@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MainTabView: View {
+    //MARK: -
+    let user: User
+    
+    //MARK: - Life Cycle
     var body: some View {
         NavigationStack {
             TabView {
@@ -27,7 +31,7 @@ struct MainTabView: View {
                     .tabItem {
                         Image(systemName: "heart")
                     }
-                ProfileView()
+                ProfileView(user: user)
                     .tabItem {
                         Image(systemName: "person")
                     }
@@ -46,11 +50,5 @@ struct MainTabView: View {
                 .foregroundColor(.black)
             
         }
-    }
-}
-
-struct MainTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabView()
     }
 }

@@ -47,6 +47,7 @@
 		45D556DE29FD93AD007A4B75 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D556DD29FD93AD007A4B75 /* ProfileView.swift */; };
 		45D556E029FD93F6007A4B75 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D556DF29FD93F6007A4B75 /* UploadPostView.swift */; };
 		45D556E229FDA282007A4B75 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D556E129FDA282007A4B75 /* FeedCell.swift */; };
+		45D87F602A095C120029E94D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D87F5F2A095C120029E94D /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		45D556DD29FD93AD007A4B75 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		45D556DF29FD93F6007A4B75 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		45D556E129FDA282007A4B75 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		45D87F5F2A095C120029E94D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 		45D556D429FD9226007A4B75 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				45D87F5F2A095C120029E94D /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				45505A1C2A05463C00EAB07F /* User.swift in Sources */,
 				45D556DC29FD9386007A4B75 /* NotificationCell.swift in Sources */,
 				45505A162A04178100EAB07F /* AuthViewModel.swift in Sources */,
+				45D87F602A095C120029E94D /* ProfileViewModel.swift in Sources */,
 				45D556E229FDA282007A4B75 /* FeedCell.swift in Sources */,
 				455059E529FEC25500EAB07F /* Extensions.swift in Sources */,
 				455059F12A02D03C00EAB07F /* LoginView.swift in Sources */,

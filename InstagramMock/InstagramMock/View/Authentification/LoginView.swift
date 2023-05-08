@@ -64,7 +64,7 @@ struct LoginView: View {
                         }
                     }
                     /// sign in
-                    Button(action: { vm.login()}) {
+                    Button(action: { vm.login(withEmail: email, password: password)}) {
                         Text("Sign In")
                             .font(.headline)
                             .foregroundColor(.white)

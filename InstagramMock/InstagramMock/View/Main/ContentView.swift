@@ -17,7 +17,9 @@ struct ContentView: View {
             if  vm.userUsession == nil {
                 LoginView()
             } else{
-                MainTabView()
+                if let user = vm.currentUser {
+                    MainTabView(user: user)
+                }
             }
         }
     }

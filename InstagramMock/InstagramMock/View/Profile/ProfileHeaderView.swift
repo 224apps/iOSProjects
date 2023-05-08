@@ -6,13 +6,20 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileHeaderView: View {
+    
+    //MARK: -
+    @ObservedObject var vm: ProfileViewModel
+    
+    
+    //MARK: - Life Cycle
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 ///profile image
-                Image("jackie")
+                KFImage(URL(string: vm.user.profileImageUrl))
                     .resizable()
                     .scaledToFill()
                     .frame(width: 80, height: 80)
@@ -28,7 +35,7 @@ struct ProfileHeaderView: View {
                 .padding(.trailing, 32)
             }
             
-            Text("Bruce Lee")
+            Text(vm.user.fullName)
                 .font(.system(size: 16, weight: .semibold))
                 .padding([.leading, .top])
             
@@ -40,7 +47,7 @@ struct ProfileHeaderView: View {
             
             HStack {
                 Spacer()
-                ProfileActionButtonView()
+                ProfileActionButtonView(vm: vm)
 
                 Spacer()
             }
@@ -53,6 +60,6 @@ struct ProfileHeaderView: View {
 
 struct ProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileHeaderView()
+        ProfileHeaderView(vm: ProfileViewModel(user: User(username: "", email: "", profileImageUrl: "", fullName: "")))
     }
 }

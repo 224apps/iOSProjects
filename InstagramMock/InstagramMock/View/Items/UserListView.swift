@@ -22,9 +22,10 @@ struct UserListView: View {
     var body: some View {
         ScrollView {
             LazyVStack{
+
                 ForEach(users){ user in
                     NavigationLink {
-                        ProfileView()
+                        ProfileView(user: user)
                     } label: {
                         UserCell(user: user)
                             .padding(.leading)

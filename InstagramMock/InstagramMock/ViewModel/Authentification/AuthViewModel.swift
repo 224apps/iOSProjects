@@ -11,6 +11,7 @@ import Firebase
 class AuthViewModel: ObservableObject {
     
     @Published var userUsession: FirebaseAuth.User?
+    @Published var currentUser: User?
   
     static let shared = AuthViewModel()
     
@@ -40,14 +41,25 @@ class AuthViewModel: ObservableObject {
                 COLLECTION_USERS.document(user.uid).setData(data) { _ in
                     print("Successfully uploaded a user data")
                     self.userUsession = user
+                    
+                    self.fetchUser()
                 }
             }
         }
         
     }
     
-    func login(){
-        print("Login")
+    func login(withEmail email: String , password: String){
+        Auth.auth().signIn(withEmail: email, password: password){ (result, error) in
+            if let error = error {
+                print(" DEBUG: Login  failed \(error.localizedDescription)")
+                return
+            }
+            
+            guard let user = result?.user else { return }
+            self.userUsession = user
+            self.fetchUser()
+        }
     }
     
     func signout(){
@@ -60,8 +72,7 @@ class AuthViewModel: ObservableObject {
         
         COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
             guard let user = try? snapshot?.data(as: User.self) else { return }
-            
-            print(user)
+            self.currentUser = user
         }
     }
     
