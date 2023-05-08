@@ -41,8 +41,9 @@ struct MainTabView: View {
     
     var logoutButton: some View {
         Button(action: { AuthViewModel.shared.signout() }) {
-            Text("Log Out")
-                .foregroundColor(.red)
+            Text("Logout")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundColor(.black)
             
         }
     }

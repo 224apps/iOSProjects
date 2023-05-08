@@ -32,17 +32,19 @@ struct SearchBar: View {
                     isEditing.toggle()
                 }
             
-            if isEditing {
-                Button(action: {
-                    isEditing.toggle()
-                    text = ""
-                    UIApplication.shared.endEditing()
-                }) {
-                    Text("Cancel")
-                        .foregroundColor(.black)
+                if isEditing {
+                    withAnimation {
+                    Button(action: {
+                        isEditing.toggle()
+                        text = ""
+                        UIApplication.shared.endEditing()
+                    }) {
+                        Text("Cancel")
+                            .foregroundColor(.black)
+                    }
+                    .padding(.trailing, 8)
+                    .transition(.move(edge: .trailing))
                 }
-                .padding(.trailing, 8)
-                .transition(.move(edge: .trailing))
             }
         }
     }

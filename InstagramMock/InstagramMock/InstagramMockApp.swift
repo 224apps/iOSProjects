@@ -10,7 +10,7 @@ import Firebase
 
 @main
 struct InstagramMockApp: App {
-    
+  
     init(){
         FirebaseApp.configure()
     }

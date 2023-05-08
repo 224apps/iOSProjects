@@ -10,13 +10,19 @@ import SwiftUI
 struct UserListView: View {
     //MARK: -
     @ObservedObject var vm: SearchViewModel
+    @Binding var searchText: String
     
+    //MARK: -
+    
+    var users: [User] {
+        return searchText.isEmpty ? vm.users : vm.filteredUsers(searchText)
+    }
     //MARK: -
     
     var body: some View {
         ScrollView {
             LazyVStack{
-                ForEach(vm.users){ user in
+                ForEach(users){ user in
                     NavigationLink {
                         ProfileView()
                     } label: {

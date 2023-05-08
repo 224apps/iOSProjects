@@ -71,6 +71,7 @@
 		45505A192A045CC600EAB07F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45505A1B2A05463C00EAB07F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		45505A2E2A059CD700EAB07F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = InstagramMock/ViewModel/Feed/SearchViewModel.swift; sourceTree = SOURCE_ROOT; };
+		45505A312A06F15C00EAB07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		45D556B129FD90FB007A4B75 /* InstagramMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D556B429FD90FB007A4B75 /* InstagramMockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramMockApp.swift; sourceTree = "<group>"; };
 		45D556B829FD90FC007A4B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		45D556B329FD90FB007A4B75 /* InstagramMock */ = {
 			isa = PBXGroup;
 			children = (
+				45505A312A06F15C00EAB07F /* Info.plist */,
 				45D556B429FD90FB007A4B75 /* InstagramMockApp.swift */,
 				45D556C529FD9140007A4B75 /* API */,
 				45D556C429FD913F007A4B75 /* ViewModel */,
@@ -548,6 +550,7 @@
 				DEVELOPMENT_TEAM = 7XGX6TD7GL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstagramMock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,6 +580,7 @@
 				DEVELOPMENT_TEAM = 7XGX6TD7GL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstagramMock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

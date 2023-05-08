@@ -27,7 +27,7 @@ struct UserCell: View {
                 Text(user.username)
                     .font(.system(size: 14, weight: .semibold))
                 
-                Text(user.fullname)
+                Text(user.fullName)
                     .font(.system(size: 14))
             }
             Spacer()
