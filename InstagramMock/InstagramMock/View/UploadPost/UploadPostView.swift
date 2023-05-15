@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct UploadPostView: View {
+    
     //MARK: -
     @State private var selectedImage: UIImage?
     @State private var postImage: Image?
     @State private var captionText: String =  ""
     @State private var imagePickerPresented = false
+    
+    @ObservedObject var vm =  UploadPostViewModel()
     
     //MARK: -
     var body: some View {
@@ -54,7 +58,14 @@ struct UploadPostView: View {
                 }
                 .padding()
                 
-                Button(action: {}) {
+                Button(action: {
+                    if let image = selectedImage {
+                        vm.uploadPost(caption: captionText, image: image){ _ in
+                            captionText = ""
+                            postImage = nil
+                        }
+                    }
+                }) {
                     Text("Share")
                         .font(.system(size: 16, weight: .semibold))
                         .frame(width: 360, height: 50)
