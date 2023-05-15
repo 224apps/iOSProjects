@@ -48,6 +48,7 @@
 		45D556E029FD93F6007A4B75 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D556DF29FD93F6007A4B75 /* UploadPostView.swift */; };
 		45D556E229FDA282007A4B75 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D556E129FDA282007A4B75 /* FeedCell.swift */; };
 		45D87F602A095C120029E94D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D87F5F2A095C120029E94D /* ProfileViewModel.swift */; };
+		45D87F642A09796A0029E94D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D87F632A09796A0029E94D /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		45D556DF29FD93F6007A4B75 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		45D556E129FDA282007A4B75 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		45D87F5F2A095C120029E94D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		45D87F632A09796A0029E94D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				45505A172A0424DC00EAB07F /* ImageUploader.swift */,
+				45D87F632A09796A0029E94D /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				45D556D629FD9326007A4B75 /* MainTabView.swift in Sources */,
 				455059EF2A02B7B400EAB07F /* ImagePicker.swift in Sources */,
 				455059E92A001DEF00EAB07F /* ProfileHeaderView.swift in Sources */,
+				45D87F642A09796A0029E94D /* UserService.swift in Sources */,
 				45D556E029FD93F6007A4B75 /* UploadPostView.swift in Sources */,
 				455059EB2A0021B900EAB07F /* UserStatView.swift in Sources */,
 				455059ED2A01346500EAB07F /* ProfileActionButtonView.swift in Sources */,
