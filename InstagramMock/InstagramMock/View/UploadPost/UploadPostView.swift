@@ -15,6 +15,7 @@ struct UploadPostView: View {
     @State private var postImage: Image?
     @State private var captionText: String =  ""
     @State private var imagePickerPresented = false
+    @Binding var tabIndex: Int
     
     @ObservedObject var vm =  UploadPostViewModel()
     
@@ -63,6 +64,7 @@ struct UploadPostView: View {
                         vm.uploadPost(caption: captionText, image: image){ _ in
                             captionText = ""
                             postImage = nil
+                            tabIndex = 0
                         }
                     }
                 }) {
@@ -79,8 +81,6 @@ struct UploadPostView: View {
             
             Spacer()
         }
-        
-        
     }
 }
 
@@ -93,8 +93,3 @@ extension  UploadPostView {
     }
 }
 
-struct UploadPostView_Previews: PreviewProvider {
-    static var previews: some View {
-        UploadPostView()
-    }
-}
